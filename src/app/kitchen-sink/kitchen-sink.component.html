@@ -22,20 +22,20 @@
         <mat-card-content>
             <pxb-mobile-stepper [steps]="4" [activeStep]="mobileStepperStep">
                 <button
-                    pxb-back-button
-                    mat-stroked-button
-                    color="primary"
-                    [disabled]="mobileStepperStep === 0"
-                    (click)="mobileStepperStep = mobileStepperStep - 1"
+                        pxb-back-button
+                        mat-stroked-button
+                        color="primary"
+                        [disabled]="mobileStepperStep === 0"
+                        (click)="mobileStepperStep = mobileStepperStep - 1"
                 >
                     Back
                 </button>
                 <button
-                    pxb-next-button
-                    mat-flat-button
-                    color="primary"
-                    [disabled]="mobileStepperStep === 4 - 1"
-                    (click)="mobileStepperStep = mobileStepperStep + 1"
+                        pxb-next-button
+                        mat-mini-fab
+                        color="primary"
+                        [disabled]="mobileStepperStep === 4 - 1"
+                        (click)="mobileStepperStep = mobileStepperStep + 1"
                 >
                     Next
                 </button>
@@ -117,10 +117,13 @@
         <mat-card-header class="mat-h2">Basic Buttons</mat-card-header>
         <mat-card-content class="button-demo-content">
             <button mat-button>Basic</button>
+            <button mat-button disabled>Basic Disabled</button>
             <button mat-button color="primary">Primary</button>
+            <button mat-button color="primary" disabled>Primary Disabled</button>
             <button mat-button color="accent">Accent</button>
+            <button mat-button color="accent" disabled>Accent Disabled</button>
             <button mat-button color="warn">Warn</button>
-            <button mat-button disabled>Disabled</button>
+            <button mat-button color="warn" disabled>Warn Disabled</button>
             <a mat-button routerLink=".">Link</a>
         </mat-card-content>
     </mat-card>
@@ -129,10 +132,13 @@
         <mat-card-header class="mat-h2">Raised Buttons</mat-card-header>
         <mat-card-content class="button-demo-content">
             <button mat-raised-button>Basic</button>
+            <button mat-raised-button disabled>Basic Disabled</button>
             <button mat-raised-button color="primary">Primary</button>
+            <button mat-raised-button color="primary" disabled>Primary Disabled</button>
             <button mat-raised-button color="accent">Accent</button>
+            <button mat-raised-button color="accent" disabled>Accent Disabled</button>
             <button mat-raised-button color="warn">Warn</button>
-            <button mat-raised-button disabled>Disabled</button>
+            <button mat-raised-button color="warn" disabled>Warn Disabled</button>
             <a mat-raised-button routerLink=".">Link</a>
         </mat-card-content>
     </mat-card>
@@ -140,12 +146,15 @@
     <mat-card class="ng-comp-card">
         <mat-card-header class="mat-h2">Flat Buttons</mat-card-header>
         <mat-card-content class="button-demo-content">
-            <button mat-flat-button>Basic</button>
-            <button mat-flat-button color="primary">Primary</button>
-            <button mat-flat-button color="accent">Accent</button>
-            <button mat-flat-button color="warn">Warn</button>
-            <button mat-flat-button disabled>Disabled</button>
-            <a mat-flat-button routerLink=".">Link</a>
+            <button mat-mini-fab>Basic</button>
+            <button mat-mini-fab disabled>Basic Disabled</button>
+            <button mat-mini-fab color="primary">Primary</button>
+            <button mat-mini-fab color="primary" disabled>Primary Disabled</button>
+            <button mat-mini-fab color="accent">Accent</button>
+            <button mat-mini-fab color="accent" disabled>Accent Disabled</button>
+            <button mat-mini-fab color="warn">Warn</button>
+            <button mat-mini-fab color="warn" disabled>Warn Disabled</button>
+            <a mat-mini-fab routerLink=".">Link</a>
         </mat-card-content>
     </mat-card>
 
@@ -153,10 +162,13 @@
         <mat-card-header class="mat-h2">Stroked Buttons</mat-card-header>
         <mat-card-content class="button-demo-content">
             <button mat-stroked-button>Basic</button>
+            <button mat-stroked-button disabled>Basic Disabled</button>
             <button mat-stroked-button color="primary">Primary</button>
+            <button mat-stroked-button color="primary" disabled>Primary Disabled</button>
             <button mat-stroked-button color="accent">Accent</button>
+            <button mat-stroked-button color="accent" disabled>Accent Disabled</button>
             <button mat-stroked-button color="warn">Warn</button>
-            <button mat-stroked-button disabled>Disabled</button>
+            <button mat-stroked-button color="warn" disabled>Warn Disabled</button>
             <a mat-stroked-button routerLink=".">Link</a>
         </mat-card-content>
     </mat-card>
@@ -164,11 +176,14 @@
     <mat-card class="ng-comp-card">
         <mat-card-header class="mat-h2">Fab Buttons</mat-card-header>
         <mat-card-content class="button-demo-content">
-            <button mat-fab>Basic</button>
+            <button mat-mini-fab>Basic</button>
+            <button mat-fab disabled>Basic Disabled</button>
             <button mat-fab color="primary">Primary</button>
+            <button mat-fab color="primary" disabled>Primary Disabled</button>
             <button mat-fab color="accent">Accent</button>
+            <button mat-fab color="accent" disabled>Accent Disabled</button>
             <button mat-fab color="warn">Warn</button>
-            <button mat-fab disabled>Disabled</button>
+            <button mat-fab color="warn" disabled>Warn Disabled</button>
             <button mat-fab aria-label="Example icon-button with a heart icon">
                 <mat-icon>favorite</mat-icon>
             </button>
@@ -180,10 +195,13 @@
         <mat-card-header class="mat-h2">Mini Fab Buttons</mat-card-header>
         <mat-card-content class="button-demo-content">
             <button mat-mini-fab>Basic</button>
+            <button mat-mini-fab disabled>Basic Disabled</button>
             <button mat-mini-fab color="primary">Primary</button>
+            <button mat-mini-fab color="primary" disabled>Primary Disabled</button>
             <button mat-mini-fab color="accent">Accent</button>
+            <button mat-mini-fab color="accent" disabled>Accent Disabled</button>
             <button mat-mini-fab color="warn">Warn</button>
-            <button mat-mini-fab disabled>Disabled</button>
+            <button mat-mini-fab color="warn" disabled>Warn Disabled</button>
             <button mat-mini-fab aria-label="Example icon-button with a heart icon">
                 <mat-icon>favorite</mat-icon>
             </button>
@@ -362,10 +380,6 @@
                     <mat-icon pxb-icon>home</mat-icon>
                     <div pxb-title>Home</div>
                 </pxb-info-list-item>
-                <pxb-info-list-item disabled="true" dense="true" divider="true" (click)="click()">
-                    <mat-icon pxb-icon>home</mat-icon>
-                    <div pxb-title>Disabled</div>
-                </pxb-info-list-item>
                 <pxb-info-list-item dense="true" divider="true" (click)="click()">
                     <mat-icon pxb-icon>home</mat-icon>
                     <div pxb-title>Home</div>
@@ -463,12 +477,12 @@
         <mat-card-header class="mat-h2">Score Card</mat-card-header>
         <mat-card-content>
             <pxb-score-card
-                [badgeOffset]="-72"
-                style="max-width: 100%"
-                class="red-score-card"
-                [headerTitle]="'Substation 3'"
-                [headerSubtitle]="'High Humidity Alarm'"
-                [headerInfo]="'4 Devices'"
+                    [badgeOffset]="-72"
+                    style="max-width: 100%"
+                    class="red-score-card"
+                    [headerTitle]="'Substation 3'"
+                    [headerSubtitle]="'High Humidity Alarm'"
+                    [headerInfo]="'4 Devices'"
             >
                 <mat-icon pxb-action-items>more_vert</mat-icon>
                 <mat-list pxb-body>
@@ -527,10 +541,10 @@
             <mat-form-field appearance="legacy" color="warn">
                 <mat-label>Legacy form field</mat-label>
                 <input
-                    matInput
-                    placeholder="Placeholder"
-                    [formControl]="errorControl"
-                    [errorStateMatcher]="errorMatcher"
+                        matInput
+                        placeholder="Placeholder"
+                        [formControl]="errorControl"
+                        [errorStateMatcher]="errorMatcher"
                 />
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                 <mat-error>Hint</mat-error>
@@ -538,10 +552,10 @@
             <mat-form-field appearance="standard" color="warn">
                 <mat-label>Standard form field</mat-label>
                 <input
-                    matInput
-                    placeholder="Placeholder"
-                    [formControl]="errorControl"
-                    [errorStateMatcher]="errorMatcher"
+                        matInput
+                        placeholder="Placeholder"
+                        [formControl]="errorControl"
+                        [errorStateMatcher]="errorMatcher"
                 />
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                 <mat-error>Hint</mat-error>
@@ -549,10 +563,10 @@
             <mat-form-field appearance="fill" color="warn">
                 <mat-label>Fill form field</mat-label>
                 <input
-                    matInput
-                    placeholder="Placeholder"
-                    [formControl]="errorControl"
-                    [errorStateMatcher]="errorMatcher"
+                        matInput
+                        placeholder="Placeholder"
+                        [formControl]="errorControl"
+                        [errorStateMatcher]="errorMatcher"
                 />
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                 <mat-error>Hint</mat-error>
@@ -560,10 +574,10 @@
             <mat-form-field appearance="outline" color="warn">
                 <mat-label>Outline form field</mat-label>
                 <input
-                    matInput
-                    placeholder="Placeholder"
-                    [formControl]="errorControl"
-                    [errorStateMatcher]="errorMatcher"
+                        matInput
+                        placeholder="Placeholder"
+                        [formControl]="errorControl"
+                        [errorStateMatcher]="errorMatcher"
                 />
                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
                 <mat-error>Hint</mat-error>
